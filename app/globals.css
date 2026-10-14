@@ -686,3 +686,19 @@ a.tile:hover {
     grid-template-columns: 1fr;
   }
 }
+
+/* ---------- Partners ---------- */
+.ally-group + .ally-group {
+  margin-top: 56px;
+}
+.ally-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 24px;
+}
+@media (max-width: 860px) {
+  .ally-grid {
+    grid-template-columns: 1fr;
+  }
+}
