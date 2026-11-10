@@ -7,12 +7,16 @@ import { business, promises } from "@/lib/business";
 import { services } from "@/lib/services";
 import { pageMeta } from "@/lib/seo";
 
-export const metadata = pageMeta({
-  title: "Junk Removal Yuba City, CA | Fast Local Junk Hauling",
-  description:
-    "Junk removal in Yuba City, CA for homes, rentals, and businesses. Furniture, appliances, cleanouts, and debris hauled away at one flat price.",
-  path: "/",
-});
+export const metadata = {
+  ...pageMeta({
+    title: "Junk Removal Yuba City, CA | Fast Local Junk Hauling",
+    description:
+      "Junk removal in Yuba City, CA for homes, rentals, and businesses. Furniture, appliances, cleanouts, and debris hauled away at one flat price.",
+    path: "/",
+  }),
+  // Google Search Console ownership verification.
+  verification: { google: "VkaGYUtbOkXuMEcQKyYbGvMweZqdtPnJlqw_OnCjCDg" },
+};
 
 const steps = [
   {
